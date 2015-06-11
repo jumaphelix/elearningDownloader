@@ -1,6 +1,7 @@
-# downloader
+# elearningDownloader
 This is a python3 command-line tool to download tutorial videos from e-learning platforms. 
-It currently supports Cybrary (http://www.cybrary.it)
+It currently supports:
+  1. Cybrary (http://www.cybrary.it)
 
 It requires that Python3 is installed including the following libraries:
 1. requests
