@@ -78,7 +78,7 @@ def getVimeoLessonVideoHtml(session, url):
 #Since a specific lesson may have more than one video (probably of different sizes and qualities), we return all the 
 #found vidoes as a list. 
 def getDownloadLinks(videoHtml):
-    cdn=re.compile("pdl.vimeocdn")#finds all data containing the cdn name
+    cdn=re.compile("vimeocdn")#finds all data containing the cdn name
     commaSplitter=re.compile(",") #splits the javascript data at every coma to generate url:link pair
     videoSplitter=re.compile("\":") #splits the string at colons to seperate the url from real links
     videoFinder=re.compile("mp4\?") #finds all links with mp4 keyword
